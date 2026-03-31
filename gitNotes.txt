@@ -30,3 +30,8 @@ command lines:
   Day 5 Board Link:
 
      https://miro.com/app/board/uXjVGraop9A=/?share_link_id=277931118072
+
+
+Project Task 1:
+---------------
+https://spiffy-salmiakki-9dd19f.netlify.app/
