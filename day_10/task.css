@@ -55,6 +55,7 @@ footer {
 nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 a {
@@ -68,3 +69,20 @@ a:hover {
     color: black;
     text-decoration: underline;
 }
+/*  laptop - 1024px
+    tab--760px
+*/
+@media screen  and (max-width: 1024px) and (min-width:760px){
+   nav{
+     justify-content: space-between;
+   }
+   .grid-container {
+   
+    grid-template-areas:
+        "section1   section1"
+        "main       main"
+        "section2    section2"
+        "footer     footer";
+}
+}
+    
