@@ -45,7 +45,5 @@ Project Task 1:
 https://spiffy-salmiakki-9dd19f.netlify.app/
 
 Project Task 2:
-https://wowfolio.netlify.app/
 https://headless-pizza.netlify.app/
-https://e-commerce-chi-five.vercel.app/
 https://responsive-e-commerce-website-with-html-css-js.vercel.app/
