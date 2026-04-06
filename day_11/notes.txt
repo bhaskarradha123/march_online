@@ -78,7 +78,7 @@ Rules:
 Note : typeOf operator helps to know the datatype /literal type 
 
 ======================================================================================
-variable: It is a container used to store a data /value
+$.variable: It is a container used to store a data /value /literal
 
 Declaration of variable:(providing names)
 ------------------------
@@ -111,3 +111,18 @@ hoisting the variable
     
      a=10;
 
+----------------------------------------------------------------------------------------
+                         var                  let                      const
+----------------------------------------------------------------------------------------
+scope                  function               block                    block
+
+re-declare              yes                    No                       no
+
+re-assign               yes                   yes                       no
+
+declaring without      undefined             undefined                 Error
+assiging
+(assiging)              optional             optional                  mandatory
+
+hoisting                 yes                    yes                      yes
+----------------------------------------------------------------------------------------
