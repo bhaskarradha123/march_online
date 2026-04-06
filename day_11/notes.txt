@@ -19,3 +19,95 @@ We can add Js in our weppage:
                    1.Inline JS
                    2.Internal Js
                    3.External JS
+
+
+Tokens:
+=======
+        building blocks of a program
+        1.Keywords
+        2.Identifiers
+        3.Values/data/literals
+        4.variables
+        5.Operators
+        6.Separators
+
+
+1.keywords: reserved words/pre defined words
+     ex: let , var , const , function , if , for ,while etc.,
+=====================================================================================
+2.Identifiers: names providing to the varibales , objects , functions , list etc.,
+
+Rules:
+   1.names cannot start with number
+   2.names cannot start with special character (except _,$)
+   3.don't provide space between names
+   4.keywords are not allowed for names
+   5.should be short , simple and meaningful
+======================================================================================
+3.value/literal/data:
+       number : 10 , -20 , 46.89
+       String : group of characters
+              : "xyz"  , 'xyz' , `xyz`(back tick/template string -- used for interpolation)
+       boolean: true / false
+       null
+       undefined
+       array : [10 ,20,30]
+       objects:{
+           "key1"=value1,
+           "key2"=value2
+       }
+
+       Data divide into two types:
+        1.Primitive Data Types -- storing single value
+             number
+             Strings
+             boolean
+             null
+             undefined
+             symbol
+             bigint
+              
+        2.Non - Primitive Data Types -- multiple data 
+             objects
+             Json
+             arrays
+             Map
+             Set 
+
+
+Note : typeOf operator helps to know the datatype /literal type 
+
+======================================================================================
+variable: It is a container used to store a data /value
+
+Declaration of variable:(providing names)
+------------------------
+            var 
+            let
+            const
+assiging/initalizing the variable:
+--------------------------------
+    let a;
+    a=10;
+
+re declaring the variable
+--------------------------
+    let a ;
+    let a ;
+
+re-assiging/re-initalizing the variable
+---------------------------------------
+    let a;
+    a=10; //assiging
+    a='xyz';//re-assiging
+
+hoisting the variable
+--------------------
+     it is a behaviour where variable and function declarations are moved to top of the scope 
+     before execution
+
+     let a;
+     console.log(a);
+    
+     a=10;
+
