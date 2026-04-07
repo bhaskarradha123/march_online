@@ -131,6 +131,79 @@ hoisting                 yes                    yes                      yes
 Operators:
 ----------
        its a symbol used to perform operations on values(operands)
+
+       1.Arithmetic Operator :
+                               + , - , * , / , % , ** 
+
+            Note : + acts like concatination(merging) with string
+                   `${}`acts like concatination ---interpolation
  
+            Operator Presedence:
+                       ()
+                       **
+                       * / %
+                       + -
+
+       2.Assignment Operator/compund Assignment Operator:
+                              =, +=,-=,*=,/=,&=,**=
+       3.Comaprision Operator/Relational Operator
+                              < ,>,<=,>=,==,===,!=,!==
+
+                Note: ==  -->checks only values and ignores data type
+                      === -->checks both value and data type
+        4.Logical Operator:
+                      && , || , !
+        5.Conditonal Operator/Ternary Operator:
+                     opernad1?operand2:operand3
+
+                     opernad1--->condition
+                     operand2--->true
+                     operand3--->false
+        6.type of operator:
+                         used to know the data type of a literal/value
+        
+        7.unary operator:
+                 1.increment unary operator
+                        1.pre-increment:
+                                         ++value
+                                         first increases the values , then use
+                        2.post-increment:
+                                         value++
+                                         first it uses the value , then increases
+                 2.decrement unary operator
+                        1.pre-decrement:
+                                         --value
+                                         first decreases the values , then use
+                        2.post-decrement:
+                                         value--
+                                         first it uses the value , then decreases
       
-      
+====================================================================================================
+
+
+Conditional Statements:
+======================
+              used to make descisions
+
+              Types:  
+                 if Statements: when condition satisfy block of code will execute
+                           
+                           syntax: if(condition){
+                                    // code
+                                   }
+
+
+                 else if Statements: if condition satisfy if block will execute,
+                                    if condition is not satisfy then else block will execute
+
+                                    syntax: if(condition){
+                                        // true
+                                    }
+                                    else{
+                                        // false
+                                    }
+                        Note : without if , we cann't use else keyword
+
+                 else if ladder Statements
+                 nested if Statements
+                 switch Statements
