@@ -255,4 +255,21 @@ Looping Statements
         while Loop
         dowhile Loop
         for Loop
+
+                    while loop                                dowhile loop
+      -------------------------------------------------------------------------
+syntax            whiile(condition){                        do{
+
+                  }                                         }while(condition)
+  
+no.of iterations      0                                           1
+
+                 first check condition,                    first executes the code,
+                 then executes the code                    then checks the condition    
         
+
+for loop:
+-------
+      for(declare and intilize;condition;updation){
+        
+      }
