@@ -182,9 +182,8 @@ Operators:
 
 
 Conditional Statements:
-======================
-              used to make descisions
-
+======================   
+              it is used to execute a block of code when condition is satisfied for one time
               Types:  
                  if Statements: when condition satisfy block of code will execute
                            
@@ -204,6 +203,56 @@ Conditional Statements:
                                     }
                         Note : without if , we cann't use else keyword
 
-                 else if ladder Statements
-                 nested if Statements
-                 switch Statements
+                 else if ladder Statements: when we are having multiple conditions
+                   
+                        syntax:  if(condition1){
+                                  //
+                                }else if(condition2){
+
+                                }else if(condition3){
+
+                                }-----
+                                else if(condition ntimes){
+
+                                }else{
+
+                                }
+                       
+
+                 nested if Statements: conditional Statements inside another conditional Statements
+                        synatx :
+                             if(condition){
+                                if(condition){
+
+                                }else{
+
+                                }
+    
+                             }
+
+
+                 switch Statements: used to compare values with cases
+                              switch(value/variable/data){
+                                    case 1:     break;
+                                    case 2:     break;
+                                    case 3:...  break;
+                                    case n:     break;
+                                    default: 
+                              }
+            Note: break is a keyword or it acts like a breaking statement , which helps
+                  to break/interupt the program
+
+                  default is a keyword, if non of the cases are not matching then 
+                  default block will execute
+
+Note:   one line of code curly brackets is not needed (optional)
+        for more than one line {} are mandatory
+
+========================================================================================================
+Looping Statements
+==================
+        it is used to execute a block of code multiple times until the condition satisfy  
+        while Loop
+        dowhile Loop
+        for Loop
+        
