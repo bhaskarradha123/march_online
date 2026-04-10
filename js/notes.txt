@@ -270,6 +270,23 @@ no.of iterations      0                                           1
 
 for loop:
 -------
+
       for(declare and intilize;condition;updation){
         
       }
+
+
+===============================================================================
+Functions:
+----------
+        -it is a block of code {}
+        -creating a function once and use/calling function many times
+        -avoid code repetiton
+        -imrpove readability
+        -easy to maintain and debug
+
+Types:
+1.Function declaration:
+-----------------------
+
+
