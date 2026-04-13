@@ -330,6 +330,7 @@ Types:
       ref();//caller
 
 4.Anonymous Function:
+
          a function whithout name, arrow function and function expression will act like 
          anonymous function
 
@@ -338,3 +339,39 @@ Types:
          setTimeOut(()=>{
 
          },timeout in sec);
+
+
+
+5.callback function:
+  ----------------
+            a function is passing through Arguments in another function
+
+    syntax:
+     function f1(){
+
+     }
+     function f2(){
+
+     }
+     function mainFunction(var1,var2,fun1,fun2){
+
+     }
+     mainFunction(10,20,f1,f2);
+
+    
+Call Back hell / pyramid of doom
+=================================
+   This is a stuation where we have multiple call backs inside a callback  (nested functions)
+   - hard to maintain / modify
+   - hard to read
+   - hard to debug
+
+   use: when are dealing with time in synchornous code then it behaves like asynchornous so we won'template
+        get expected output , to avoid this senario we can use call back hell and promises
+
+Promises:
+=========
+     - It is an Object , used to handle asynchornous operations
+
+
+

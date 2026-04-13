@@ -19,28 +19,45 @@
 
 
 // function expression
-let f1=function(){
-    console.log("function expression");
+// let f1=function(){
+//     console.log("function expression");
     
-}
-f1();
+// }
+// f1();
 
 
 
 // arrow function or shorter syntax for function
-let f3=()=>{
-  console.log("arrow function");
+// let f3=()=>{
+//   console.log("arrow function");
   
+// }
+// f3();
+
+// //Anonymous Function
+// setTimeout(f1(), 5000);
+
+// setTimeout(() => {
+//     console.log("anonymous function");
+// }, timeout);
+
+
+// call back functions
+
+function isSuccess(){
+    console.log("authentication success");
+    
 }
-f3();
+function isFailure(){
+    console.log("login failed");
+    
+}
+function isAuthenticate(userName ,password , success, failure){
+    if(userName=='user'&& password=='user@123'){
+          success(); 
+    }else{
+          failure();
+    }
+}
 
-//Anonymous Function
-setTimeout(f1(), 5000);
-
-setTimeout(() => {
-    console.log("anonymous function");
-}, timeout);
-
-
-
-
+isAuthenticate('admin','user@123',isSuccess,isFailure);
