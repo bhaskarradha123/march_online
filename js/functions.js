@@ -44,20 +44,37 @@
 
 // call back functions
 
-function isSuccess(){
-    console.log("authentication success");
+// function isSuccess(){
+//     console.log("authentication success");
     
-}
-function isFailure(){
-    console.log("login failed");
+// }
+// function isFailure(){
+//     console.log("login failed");
     
-}
-function isAuthenticate(userName ,password , success, failure){
-    if(userName=='user'&& password=='user@123'){
-          success(); 
-    }else{
-          failure();
-    }
-}
+// }
+// function isAuthenticate(userName ,password , success, failure){
+//     if(userName=='user'&& password=='user@123'){
+//           success(); 
+//     }else{
+//           failure();
+//     }
+// }
 
-isAuthenticate('admin','user@123',isSuccess,isFailure);
+// isAuthenticate('admin','user@123',isSuccess,isFailure);
+
+
+// constructor function -- uesd to create objects
+     function Student(name,email,phone,rollNum){
+         this.name=name;
+         this.email=email;
+         this.phone=phone;
+         this.rollNumber=rollNum;
+     }
+
+     let s1=new Student('Raja','raj@gmail.com',6545534,101);
+     let s2=new Student('Rani','rani@gmail.com',434567,102);
+     console.log(s1);
+     console.log(s2);
+     
+     
+
