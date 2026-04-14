@@ -5,6 +5,7 @@ JavaScript:
           - It is used as client(UI) and server side(Node JS) language
           - It is a synchornous language(it executes the code line by line )
           - It is a case sensitive
+          -ES(ECMA Script)
 
 
 Javascript is used in :
@@ -390,18 +391,48 @@ promises can be handle in two ways:
     await is a keyword used to wait for a promise to resolve 
     await is used inside async function(mandatory)
 
+
+  Promise.race():
+  ==============
+        - it collects multiple promises in array format
+        - it returns single result
+        - First win , first Value
+        - it won't wait for all promises to complete
+
+Promise.all():
+==============
+         - it collect multiple promises in array format
+         - it result promises in array format , when all promises are in resolve state
+         - if any promise is failed it execute catch block as errors
+
+Promise.allSettled():
+=====================
+          - it collect multiple promises in array format
+          - it result promises in array format , in the form of object which consit state and value
+
 ==================================================================================================
 
-6.Constructor function :
-                 useds to create Object 
-                 -Object - real world entity
-                         - data is stored in the form of key and valur pair 
-                         - object is enclosed in {}
+Object:
+========
+            - real world entity, which is a combination of properties/data/variables and functions/action/method
+            - data is stored in the form of key and valur pair 
+            - object is enclosed in {}
                             syntax: 
                                 {
                                     "key1":value1,
                                     "key2":value2
                                 }
+Note : In Js every object consist of prototype
+
+creatation of objects:
+                 1.Constructor function
+                 2.class and Constructor
+                 3.Object literal
+                 4.Object.create()
+
+6.Constructor function :
+                 useds to create Object 
+                
         syntax : 
            function FunctionName(ar1,arg2,arg3...){
             this.arg1=arg1;
@@ -410,4 +441,55 @@ promises can be handle in two ways:
 
            new FunctionName(val1,val2,val3...)//caller
     Note: indicates the current object
+
+2.class and Constructor:
+             - it is a template for creating objects
+ 
+ syntax :
+    class ClassName{
+        Constructor(ar1,ar2){
+            this.arg1=arg1;
+            this.arg2=arg2;
+        }
+    }
+
+3.Object literal:(static way)
+     synatx:
+          let varName={
+            k1=v1,
+            k2=v2,
+
+          }
+4.Object.create():
+    
+    const obj={
+        'key1'='val1'
+    }
+
+    let newObj=Object.create(obj);
+      
+      - it is a way of creating a new object based on existing object (Inheritance)
+      - thus , it can share the prperties and functions of an existing object--- prototype
+
+Prototype:
+----------
+       -it is a property of an object
+       -it allows other object to inherit/sharing  properties and functions
+       -it helps to add new properties and functions into object
+       -it helps to create a prototype chain between objects
+
+Prototype chaining:
+-------------------
+         -it is a chain of objects
+         -it can achieve using Object.create()
+   
+
+
+
+
+Object methods:
+--------------
+Object.keys()-- returns keys in array format
+Object.values()---returns values in array format
+Object.entries()---return key-value pair in array format
     ===================================================================================
