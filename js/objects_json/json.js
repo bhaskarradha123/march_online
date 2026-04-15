@@ -30,29 +30,85 @@
 async function fetchData(){
    let res= await  fetch('https://jsonplaceholder.typicode.com/users/1');
    let user=await res.json();
-   console.log(user);
-   console.log(user.name);
-   console.log(user['username']);
+//    console.log(user);
+//  for loop 
 
-//    re-initlize
-   user.name='new Name';
-   console.log(user.name);
+// printing only keys
+// for(let key in user){
+//     console.log(key); 
+// }
 
-   //delete 
-   console.log(user.email);
-   delete user.email;
-   console.log(user.email);
+// // printing only values
+// for (const key in user) {
+//     console.log(user[key]);
+// }
+
+// // printing key -value pairs
+
+// for (const key in user) {
+//     console.log(key ,"--",user[key]);
+// }
    
-   
-
- 
-
+// let res1=Object.keys(user);
+// console.log(res1);
 
 
+// forEach function
+
+//  iterating keys using 
+Object.keys(user).forEach(
+    (key)=>{
+        console.log(key);       
+    }
+);
+
+// // iterating values 
+
+Object.values(user).forEach(
+     (value)=>{
+        console.log(value);     
+    }
+)
+
+// iterating key-value pair
+
+Object.entries(user).forEach(
+     (pair)=>{
+        console.log(pair);     
+    }
+)
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    console.log(user);
+//    console.log(user.name);
+//    console.log(user['username']);
+
+// //    re-initlize
+//    user.name='new Name';
+//    console.log(user.name);
+
+//    //delete 
+//    console.log(user.email);
+//    delete user.email;
+//    console.log(user.email);
 
 
 //    let obj1={
@@ -69,29 +125,29 @@ async function fetchData(){
       
 }
 
-// fetchData();
+fetchData();
 
-let  obj={
-    "name":'radha',
-    "email":'radha@gmail.com',
-    "phone":97867656545
-}
+// let  obj={
+//     "name":'radha',
+//     "email":'radha@gmail.com',
+//     "phone":97867656545
+// }
 
-console.log(obj);
+// console.log(obj);
 
-// destructing the obje
-    let{name , email}=obj;
-    console.log(name);
-    console.log(email);
-    // destrcuting and renamig
-    let{name:userName,email:userEmail}=obj;
-    console.log(userName);
-    // add new vales
-    let{address="banglore"}=obj;
-    console.log(address);
+// // destructing the obje
+//     let{name , email}=obj;
+//     console.log(name);
+//     console.log(email);
+//     // destrcuting and renamig
+//     let{name:userName,email:userEmail}=obj;
+//     console.log(userName);
+//     // add new vales
+//     let{address="banglore"}=obj;
+//     console.log(address);
 
 
-    console.log(obj);
+//     console.log(obj);
     
     
     

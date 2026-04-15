@@ -618,5 +618,19 @@ Object methods:
 Object.keys()-- returns keys in array format
 Object.values()---returns values in array format
 Object.entries()---return key-value pair in array format
+
+Iterating the object key-values:
+------------------------------
+      - for in loop
+          syntax:
+                for(let key in Obj){
+                  //logic
+                }
+      - forEach function
+               obj.forEach(
+                (key)=>{
+                    // logic 
+                }
+               )
 =====================================================================================
 
