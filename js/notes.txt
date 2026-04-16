@@ -704,3 +704,49 @@ updating  a value:
 ----------------
                - througn index position
                - array functions
+
+Iterate an array:
+---------------- 
+                  while loop - index 
+                  do while loop -index
+                  for loop   -index
+                  for in loop -index
+                  for of loop -value/element
+
+
+forEach():
+---------
+          - it is a callback function 
+          - which will accept a function ,contains 3 arguments 
+          - 1args--value (mandatory) , 2arg--index , 3arg--arr
+          - it won't return any value
+    syntax :
+       arr.forEach(
+        (value,index,arr)=>{
+
+        }
+       )
+
+map()
+-----
+      - it is a callback function
+      - It helps to process the data(data manipulation/processing) 
+      - It returns new array which is same size as input array
+  syntax : 
+      arr.map(
+        (value,index,arr)=>{
+            return _____;
+        }
+      )
+
+filter() -- Predicate function
+-----
+      - it is a callback function
+      - It helps to filter the data(based on condition) 
+      - It returns new array , size will change from input size
+  syntax : 
+      arr.filter(
+        (value,index,arr)=>{
+            return condition;
+        }
+      )
