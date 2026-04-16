@@ -750,3 +750,54 @@ filter() -- Predicate function
             return condition;
         }
       )
+
+find() -- Predicate function
+-----
+      - it is a callback function
+      - It helps to filter the data and returns first matching result
+      - It returns  a single value
+  syntax : 
+      arr.find(
+        (value,index,arr)=>{
+            return condition;
+        }
+      )
+
+findLast() -- Predicate function
+-----
+      - it is a callback function
+      - It helps to filter the data and returns last matching result
+      - It returns  a single value
+  syntax : 
+      arr.findLast(
+        (value,index,arr)=>{
+            return condition;
+        }
+      )
+
+every() -- Predicate function
+-----
+      - it is a callback function
+      - It helps to filter the data and returns boolean result
+      - if all values are satisfying with the condition it returns true or else retruns false
+      - It returns  a boolean value
+  syntax : 
+      arr.every(
+        (value,index,arr)=>{
+            return condition;
+        }
+      )
+
+some() -- Predicate function
+-----
+      - it is a callback function
+      - It helps to filter the data and returns boolean result
+      - if some of the  values are satisfying with the condition it returns true 
+      - if none of the values are not satisfying with the condition , then it returns false
+      - It returns  a boolean value
+  syntax : 
+      arr.some(
+        (value,index,arr)=>{
+            return condition;
+        }
+      )

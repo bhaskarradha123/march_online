@@ -126,9 +126,16 @@ console.log(evenArr);
 let find=arr.find((value)=> value%2==0)
 console.log(find);
 
+// filter and return last result
+let findLast=arr.findLast((value)=> value%2==0)
+console.log(findLast);
+
 // filter and returns true if it is matching with all values or else return false
 let every=arr.every((value)=> value%2==0)
 console.log(every);
+
+let some=arr.some((value)=> value%2==0)
+console.log(some);
 
 
 
