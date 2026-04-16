@@ -634,3 +634,73 @@ Iterating the object key-values:
                )
 =====================================================================================
 
+Array :
+------
+   -Array is a collection/list of values/items/elements
+   -It is used to store multiple values in single variable/reference
+   -Array can accept same data type or different data type
+   -Array is mutable(modify after creation)
+   -Array is enclosed in []
+   -Array will store values in index position
+
+   synatx :   let arr= [10 , 20 , 30] --->size/lenght-3
+                        0    1    2   --->indexing position
+
+Array Manipulation (read, update ,delete ,create)
+==================================================
+Array Creation :
+--------------
+               1.Array literal
+               2.Array Constructor and new keyword
+               3.Array.from
+               4.Array.of
+ 
+            // array literal
+            let arr=[10,20,30];
+            console.log(arr);
+            console.log(arr.length);// 3 size or length
+            let arr2=[10,"mango",true,{"name":"raj"}]
+            console.log(arr2);
+
+            //using new keyword
+            let arr3=new Array(10,20,30,40);//[10,20,30,40]
+            console.log(arr3);
+            let arr4=new Array(4);//[_,_,_,_]
+            console.log(arr4);
+
+            // from function
+            let value="hello world";
+            let arr5=Array.from(value);
+            console.log(arr5);
+
+            // of function
+            let arr6=Array.of(10,20,30,40);//[10,20,30,40]
+            console.log(arr6);
+            let arr7=Array.of(2);//[2]
+            console.log(arr7);
+
+
+Accessing/Reading a value:
+-------------------------
+                 -through index position - positive 
+                 -through at function    - positive or negative
+                 let arr=[ 10 , 20 , 30 ]
+                           0    1    2
+                           -3   -2   -1
+
+Adding a value:  (we can change the size of an array)
+--------------
+                - through index position --specific position
+                - puah(value)---adds element to last position
+                - unshift(value)--adds element to first position
+
+delete a value:
+--------------
+                - delete keyword -- there won't be any change in size , it will make the value is empty
+                - pop() ---removes element at last position and returns deleted value
+                - shift()--removes element at fitst position and returns deleted value
+
+updating  a value:
+----------------
+               - througn index position
+               - array functions
