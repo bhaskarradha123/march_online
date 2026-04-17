@@ -751,6 +751,29 @@ filter() -- Predicate function
         }
       )
 
+reduce()
+--------
+         - It is a call back function
+         - It returns  a single value by performing operation on each elements of an array
+
+    syntax:
+        arr.reduce(callBack,intialValue)
+        
+        function  callBack(accumulator, currentValue, currentIndex,array){
+          return accumulator
+        }
+accumulator is used to store values/result of operation
+accumulator and currentValue are mandatory in callBack
+ 
+
+reverse()
+---------
+        - it helps to reverse an array 
+        - IT will modify input array and returns new reversed array
+    syntax :
+         arr.reverse();
+
+
 find() -- Predicate function
 -----
       - it is a callback function
@@ -770,6 +793,31 @@ findLast() -- Predicate function
       - It returns  a single value
   syntax : 
       arr.findLast(
+        (value,index,arr)=>{
+            return condition;
+        }
+      )
+
+
+findIndex() -- Predicate function
+-----
+      - it is a callback function
+      - It helps to filter the data and returns first matching result index position
+      - It returns  a single value(index position)
+  syntax : 
+      arr.findIndex(
+        (value,index,arr)=>{
+            return condition;
+        }
+      )
+
+findLastIndex() -- Predicate function
+-----
+      - it is a callback function
+      - It helps to filter the data and returns last matching result index position
+      - It returns  a single value(index position)
+  syntax : 
+      arr.findLastIndex(
         (value,index,arr)=>{
             return condition;
         }
@@ -801,3 +849,46 @@ some() -- Predicate function
             return condition;
         }
       )
+
+    
+splice()
+-------
+       -it helps to delete , modify the data in an array
+       -It won't effect input/original array
+     syntax:
+          arr.splice(startIndexPosition,deleteCount,updatedValue ..........);
+
+          arr.splice(startIndexPosition) ---it will start deleting from index position to the end
+          arr.splice(startIndexPosition,deleteCount)-->from index position ,it delete values based on count
+          arr.splice(startIndexPosition,deleteCount,updatedValue[]) -- it deletes the data , 
+              in the place of deleted data , it adds new data/updated data
+
+slice()
+--------
+       - it helps to extract / provide shallow copy from original array
+       - it won't modified input array
+       - it returns a new array(shallow copy)
+       syntax:
+          arr.slice(startIndex,endIndex)
+
+          arr.slice(startIndex)--from startindex to end ,  it tries to extract 
+          arr.slice(startIndex,endIndex)- it extarct from startIndex to endIndex
+    
+    Note: startIndex-Inclusive
+          endIndex-Excelusive
+
+
+
+String :
+------
+       - It is a collection of character
+ 
+ toString(): it converts array into string , and each values can be join by ,(comma)
+ join(character): it converts array into string , and each values can be join with specific character
+
+padStart(size, charcter): it helps to add characters at starting of a string based on size
+padEnd(size,charcter):it helps to add characters at ending of a string based on size
+
+trim()--removes whitespces
+trimStart()--remove whitespaces at start
+trimEnd()--remove whitespaces at end

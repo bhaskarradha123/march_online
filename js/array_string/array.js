@@ -109,33 +109,131 @@
 
 
 
-let arr=  [10,2,30,4,50];
-        //1,2,9,16,25 
+// let arr=  [10,2,30,4,50];
+//         //1,2,9,16,25 
 
-//processing the data 
-arr.forEach((value)=>{console.log(value*value)});
-let squareArr=arr.map((value)=> value*value);
-console.log(squareArr);
+// //processing the data 
+// arr.forEach((value)=>{console.log(value*value)});
+// let squareArr=arr.map((value)=> value*value);
+// console.log(squareArr);
 
-// filtering the data
-arr.forEach((value)=>{if(value%2==0){console.log(value);}});
-let evenArr=arr.filter((value)=> value%2==0)
-console.log(evenArr);
+// // filtering the data
+// arr.forEach((value)=>{if(value%2==0){console.log(value);}});
+// let evenArr=arr.filter((value)=> value%2==0)
+// console.log(evenArr);
 
-// filter and return first result
-let find=arr.find((value)=> value%2==0)
-console.log(find);
+// // filter and return first result
+// let find=arr.find((value)=> value%2==0)
+// console.log(find);
 
-// filter and return last result
-let findLast=arr.findLast((value)=> value%2==0)
-console.log(findLast);
+// // filter and return last result
+// let findLast=arr.findLast((value)=> value%2==0)
+// console.log(findLast);
 
-// filter and returns true if it is matching with all values or else return false
-let every=arr.every((value)=> value%2==0)
-console.log(every);
+// // filter and returns true if it is matching with all values or else return false
+// let every=arr.every((value)=> value%2==0)
+// console.log(every);
 
-let some=arr.some((value)=> value%2==0)
-console.log(some);
+// let some=arr.some((value)=> value%2==0)
+// console.log(some);
+
+
+// let arr = [1, 2, 3, 4, 54];
+
+// let findLast=arr.findIndex((value)=> value%2==0)
+// console.log(findLast);
+
+
+// console.log(arr);
+// arr.reverse()
+// console.log(arr);
+
+
+
+// let sum = arr.reduce(
+//         (sum, value) => {
+//                 return sum + value
+//         }
+//         , 0);
+
+// console.log(sum);
+
+// let res = arr.filter(
+//         (value) => {
+//                 return value % 2 == 0
+//         }
+// )
+//         .reduce(
+//                 (sum, value) => {
+//                         return sum + value
+//                 }
+//                 , 0
+//         )
+// console.log(res);
+
+// let sum1=0;
+// for (let index = 0; index < arr.length; index++) {
+//         const element = arr[index];        
+//         if(element%2==0){            
+//          sum1+=element
+//         }
+// }
+// console.log(sum1);
+
+
+
+//          0         1         2     3    4     5
+let arr=['hello','students','nice','to','meet','you'];
+// console.log(arr);
+// // arr.splice(5);// from the position it will delete to the end
+// // arr.splice(0,2)//1st- intiial index position , 2nd-no.of elements need to be remove
+// // arr.splice(1,1,'dear')
+// // arr[1]='dear'
+// console.log(arr);
+
+// console.log(arr);
+// // let output=arr.slice(2)//['nice', 'to', 'meet', 'you']
+// // let output=arr.slice(1,4)//['students', 'nice', 'to']
+// console.log(output);
+
+// console.log(arr);
+// console.log(arr.toString());
+// console.log(arr.join(':'));
+
+// let str="hello"
+// console.log(str);
+// console.log(str.padEnd(10,'*'));
+// console.log(str.padStart(20,'*'));
+
+
+// let str="   hello   "
+// console.log(str.length);
+// // let str2=str.trimEnd()
+// // console.log(str2.length);
+// // console.log(str.trimStart().length);
+// console.log(str.trim().length);
+
+// let str="hi";
+// console.log(str.repeat(3));
+// console.log(str.replace('i','ello'));
+
+let  str='hello,students,nice,to,meet,you';
+console.log(str);
+console.log(str.split(','));
+console.log(str.substring(5,6));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
