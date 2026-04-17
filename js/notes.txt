@@ -823,6 +823,30 @@ findLastIndex() -- Predicate function
         }
       )
 
+indexOf():
+---------
+         - it helps to find an element from start  in an array
+         - if elements is present it returns index position or else it returns -1
+         syntax:
+            arr.indexOf(value,startIndex);
+         - startIndex is optional
+ 
+lastIndexOf():
+---------
+         - it helps to find an element  from last in an array
+         - if elements is present it returns index position or else it returns -1
+         syntax:
+            arr.indexOf(value,startIndex);
+         - startIndex is optional
+
+includes()
+--------
+        -it helps to find an element in an array
+        -it element is present then it returns true or else retruns false
+        syntax:
+            arr.includes(element);
+        
+
 every() -- Predicate function
 -----
       - it is a callback function
@@ -892,3 +916,9 @@ padEnd(size,charcter):it helps to add characters at ending of a string based on 
 trim()--removes whitespces
 trimStart()--remove whitespaces at start
 trimEnd()--remove whitespaces at end
+
+repeat(count)-->It repeat the string based on count times
+replace(serachValue,replacedValue)- helps to replace a character 
+substring(startIndex,endIndex)-same like slice , used to extract the string 
+split(charcter , limit)- based on charcter , it will divide string into multiple string and make as an array
+                       -based on limit it returns those many elements  and it is optional

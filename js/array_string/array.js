@@ -183,7 +183,26 @@
 
 
 //          0         1         2     3    4     5
-let arr=['hello','students','nice','to','meet','you'];
+// let arr=['hello','students','nice','to','meet','you'];
+
+// console.log(arr.indexOf('hello',2));
+// console.log(arr.lastIndexOf('helloo'));
+
+
+
+let arr=[10,20,30,20,30];
+console.log(arr.includes(100));
+
+console.log(arr.lastIndexOf(20));
+console.log(arr.fill(100));//[100, 100, 100, 100, 100]
+let arr2=[1,2,3,4,5];
+console.log(arr2.fill(10,2));//[1, 2, 10, 10, 10]
+let arr23=[1,2,3,4,5];
+console.log(arr23.fill(10,2,3));//[1, 2, 10, 4,5]
+
+
+
+
 // console.log(arr);
 // // arr.splice(5);// from the position it will delete to the end
 // // arr.splice(0,2)//1st- intiial index position , 2nd-no.of elements need to be remove
@@ -217,10 +236,10 @@ let arr=['hello','students','nice','to','meet','you'];
 // console.log(str.repeat(3));
 // console.log(str.replace('i','ello'));
 
-let  str='hello,students,nice,to,meet,you';
-console.log(str);
-console.log(str.split(','));
-console.log(str.substring(5,6));
+// let  str='hello,students,nice,to,meet,you';
+// console.log(str);
+// console.log(str.split(','));
+// console.log(str.substring(5,6));
 
 
 
