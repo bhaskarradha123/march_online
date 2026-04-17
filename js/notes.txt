@@ -901,6 +901,19 @@ slice()
     Note: startIndex-Inclusive
           endIndex-Excelusive
 
+fill():
+-------
+       -it helps to fill an element in an array
+       syntax:
+        arr.fill(NewValue)--->it will update all values in an array with new Values
+        arr.fill(newValue,startIndex)->it will update newValue from start index position
+        arr.fill(newValue,startIndex,endIndex)->it will update newValue from start to end
+
+        Note: startIndex-Inclusive
+              endIndex-Excelusive
+
+
+
 
 
 String :
