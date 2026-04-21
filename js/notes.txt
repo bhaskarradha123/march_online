@@ -1002,4 +1002,12 @@ DOM Manipulation:
 2.Create Elements:
 -----------------
        - using createElemet function of document
-       
+
+3.Element Manipulation:
+----------------------
+     1.append()/appendChild() -- adds elements at the end in a parent element
+     2.prepend()----adds elements at the top in a parent element
+     3.insertBefore(newElement, existingElement)---adds element in a respective position 
+                                                 based on element we are providing in 2nd Arguments
+    4.replaceChild(newText,oldText)--replace old element with new element in parent container
+    5.cloneNode()---it helps to create an exact copy(cloned)
