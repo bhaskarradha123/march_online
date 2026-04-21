@@ -1011,3 +1011,12 @@ DOM Manipulation:
                                                  based on element we are providing in 2nd Arguments
     4.replaceChild(newText,oldText)--replace old element with new element in parent container
     5.cloneNode()---it helps to create an exact copy(cloned)
+
+4.Attribute Manipulation:
+------------------------
+        - modifying Attribute by dom Functions
+    1.setAttribute() -- adding Attribute
+    2.removeAttribute()--removing Attribute
+    3.getAttribute()--accessing Attribute
+    4.hasAttribute()--chceking Attribute is exist or not
+    

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         }
     </style>
 </head>
+
 <body>
     <!--  create a form  of two inputs 
          1.Validate with db crendetilas(static data)
@@ -18,32 +20,36 @@
     -->
 
     <form action="#" id="form">
-        <input type="text" name="userName" id="userName" placeholder="enter userName" ><br><br>
-        <input type="password" name="password" id="password" placeholder="enter password" ><br><br>
+        <input type="text" name="userName" id="userName" placeholder="enter userName"><br><br>
+        <input type="text" name="password" id="password" placeholder="enter password"><br><br>
         <button type="submit">LOGIN</button>
     </form>
-    
-   <script>
-     let userName="admin";
-     let password="admin@123";
-     let form= document.getElementById('form');
-    form.addEventListener('submit',(event)=>{
-       event.preventDefault(); // stop reload the page
-        let name= document.getElementById('userName').value;
-        let pwd=document.getElementById('password').value;
-       
-        if(name===userName&&pwd===password){
-            window.location.href='https://www.w3schools.com/'   
-        }else{
-              let h2=document.createElement('h2');
-              h2.innerHTML='Invalid credentials'
-              h2.style.color='red'
-              form.prepend(h2);
-            
-        }
-     })
 
-   </script>
+    <script>
+        let userName = "admin";
+        let password = "admin@123";
+        let form = document.getElementById('form');
+        form.addEventListener('submit', (event) => {
+            // event.preventDefault(); // stop reload the page
+            let name = document.getElementById('userName').value;
+            let pwd = document.getElementById('password').value;
+            let h2 = document.createElement('h2');
+            if (name === userName) {
+                if (pwd === password) {
+                    window.location.href = 'https://www.w3schools.com/'
+                }
+                else{
+                    h2.innerHTML = 'password is incorrect'  
+                }
+            } else {
+                h2.innerHTML = name+ ' is wrong please enter correct userName'  
+            }
+            h2.style.color = 'red'
+            form.prepend(h2);
+        })
+
+    </script>
 
 </body>
+
 </html>
