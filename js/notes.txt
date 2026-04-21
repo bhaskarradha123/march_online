@@ -977,3 +977,29 @@ Use Cases:
 
                                        DOM                                   BOM
                    -------------------------------------------------------------------------
+purpose               interact with a html document                 interact with a browser
+
+main object                   document                                     window
+---------------------------------------------------------------------------------------------
+
+DOM Manipulation:
+-----------------
+                1.Access Elements
+                2.Create Elements
+                3.Element Manipulation (adding , removing , replacing)
+                4.Attribute Manipulation
+                5.Css Manipulation
+                6.Event Manipulation/Handling
+
+1.Element  Accessing:
+---------------------
+        1.getElementById(idName)-returns single element based on id name(unique)
+        2.getElementsByClassName(className)-returns multiple elements (Html Collection)
+        3.getElemetsByTagName(tagName)-returns multiple elements (Html Collection)
+        4.querySelector(queryName)-returns first matching result ( basde on selector matching)
+        5.querySelectorAll(queryName)-returns all matching results(NodeList)
+
+2.Create Elements:
+-----------------
+       - using createElemet function of document
+       
