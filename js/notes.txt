@@ -949,3 +949,31 @@ replace(serachValue,replacedValue)- helps to replace a character
 substring(startIndex,endIndex)-same like slice , used to extract the string 
 split(charcter , limit)- based on charcter , it will divide string into multiple string and make as an array
                        -based on limit it returns those many elements  and it is optional
+
+==========================================================================================================================
+BOM(browser object model):
+--------------------------
+            - It is a collection of objects that represents browser environment
+            - It provides access to the browser objects like window and document
+Use cases:
+       - Redirect to another page
+       - Open a new window/tab
+       - Access browser info , history
+       - Access browser navigation
+       - Handling timeouts and intervals
+       - Access browser cookies(session)
+       - browser alert messages
+
+DOM(document object model)
+-------------------------
+                 - It represents the html document structure and its content as a tree of objects
+                 - It helps to access html elements and its properties
+                 - It helps to manipulate the html elements and CSS
+Use Cases:
+        - Creating dynamic webpages
+        - Manipulating html document
+        - Create interactive web pages
+        - Handling events
+
+                                       DOM                                   BOM
+                   -------------------------------------------------------------------------
