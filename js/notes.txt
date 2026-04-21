@@ -1017,6 +1017,14 @@ DOM Manipulation:
         - modifying Attribute by dom Functions
     1.setAttribute() -- adding Attribute
     2.removeAttribute()--removing Attribute
-    3.getAttribute()--accessing Attribute
-    4.hasAttribute()--chceking Attribute is exist or not
-    
+    3.getAttribute()--accessing Attribute and returns value
+    4.hasAttribute()--chceking Attribute is exist or not and returns boolean data
+
+5.CSS Manipulation:
+------------------
+      1.style- adding Css (inline css)
+      2.ClassList.add()--adding class
+      3.ClassList.remove()--removing class
+      4.ClassList.toggle()------toggling class --(on/off)
+      5.ClassList.contains()---checking class present or not
+      5.getComputedStyle()---accessing style
