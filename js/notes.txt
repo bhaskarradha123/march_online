@@ -991,7 +991,7 @@ DOM Manipulation:
                 5.Css Manipulation
                 6.Event Manipulation/Handling
 
-1.Element  Accessing:
+1.Element  Accessing: (deals with document)
 ---------------------
         1.getElementById(idName)-returns single element based on id name(unique)
         2.getElementsByClassName(className)-returns multiple elements (Html Collection)
@@ -1003,7 +1003,7 @@ DOM Manipulation:
 -----------------
        - using createElemet function of document
 
-3.Element Manipulation:
+3.Element Manipulation: (deals with document)
 ----------------------
      1.append()/appendChild() -- adds elements at the end in a parent element
      2.prepend()----adds elements at the top in a parent element
@@ -1012,7 +1012,7 @@ DOM Manipulation:
     4.replaceChild(newText,oldText)--replace old element with new element in parent container
     5.cloneNode()---it helps to create an exact copy(cloned)
 
-4.Attribute Manipulation:
+4.Attribute Manipulation: (deals with element)
 ------------------------
         - modifying Attribute by dom Functions
     1.setAttribute() -- adding Attribute
@@ -1020,11 +1020,92 @@ DOM Manipulation:
     3.getAttribute()--accessing Attribute and returns value
     4.hasAttribute()--chceking Attribute is exist or not and returns boolean data
 
-5.CSS Manipulation:
+5.CSS Manipulation: (deals with element)
 ------------------
       1.style- adding Css (inline css)
       2.ClassList.add()--adding class
       3.ClassList.remove()--removing class
       4.ClassList.toggle()------toggling class --(on/off)
       5.ClassList.contains()---checking class present or not
-      5.getComputedStyle()---accessing style
+      5.getComputedStyle(element)---accessing style
+
+
+6.Event Manipulation:
+--------------------
+       function: it is a block of code used to perform a specific task
+               : it can be resuable
+        
+       event : it is an action occurs in browser side
+             : when event triggers , it will call functions to perform a task
+             : used to handle user interactoins
+
+    Examples:
+            1.mouse events --onclick, onDoubleClick, onMouseOver etc .,
+            2.Keyboard events--onKeyUp , onKeyDown , onKeyPress etc.,
+            3.Form Events ---onSubmit ,onChange, onFoucs,onBlur etc.,
+            4.Window Events---onLoad,onResize etc.,
+
+1.Adding event :
+---------------
+            1.inline :
+                   <h1  onEventName="functionName()" ></h1>
+            2.event property:         
+                 let span=document.getElementById('span');
+                    span.onEventName=functionName();                
+            3.addEventListener():
+                  let div=document.getElementById('div');
+                      div.addEventListener('eventName',functionName());
+
+2.Removing Event:
+----------------
+                -first we need to add event , then only we can delete an event
+
+                 let div=document.getElementById('div');
+                      div.addEventListener('eventName',functionName);
+                      div.removeEventListener('eventName',functionName);
+3.Dispatch Event:
+---------------
+                -It is used to fire an event programatically
+                -Dispatching an event means we manually trigger an event using JS instead of 
+                 waiting for user action
+
+                 disptachEvent(eventObject);
+               
+Event Propagation:
+------------------
+               -The event will propgagate from child to parent and vice versa
+            1.Event bubbling:
+                        - It will propagate from child to parent
+                        - this is default Propagation
+                        ex: button--->child---->parent
+            2.Event Captuirng/tricking
+                         - It will propagate from parent to child
+                         - In addEventListener() , we need to true in 3rd argument
+                         ex: parent--->child---->button
+    Note: event.stopPropagation() is used to stop propagation
+
+=========================================================================================================
+
+JQUERY 
+++++++   
+      - It is a fast , lightweight Js Library 
+      - We can simplify Html , CSS and Js tasks
+
+1.Accessing/Select Elemets:
+---------------------------
+$('tagName') //all tags
+$('#idName') //id
+$('.className') // class
+
+2.Adding Events:
+------------------
+$('tagName').eventName(function);
+
+3.Css Manipulation:
+-------------------
+$('tagName').css("propertyName","value");
+
+4.Adding Content:
+---------------
+$('tagName').text("text....");
+$('tagName').html("<h1>text....</h1>")
