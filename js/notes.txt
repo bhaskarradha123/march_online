@@ -179,6 +179,32 @@ Operators:
                                          value--
                                          first it uses the value , then decreases
       
+Binary Number : 0,1
+Decimal Number: 0,1,2,3,4,5,6,7,8,9
+Ocatal Number: 0,1,2,3,4,5,6,7
+HexaDeciaml Number: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+
+         8.Bitwise Operator:
+                       & - Bitwise And
+                       | - Bitwise OR
+                       ^ - Bitwise XOR
+                       ~ - Bitwise NOT 
+                       << - Left shift  
+                       >> - Right shift
+         
+    ------------------------------
+a         1    1   0   0
+     
+b         1    0   1   0
+    ------------------------------
+AND       1    0   0   0
+
+OR        1    1   1   0
+
+XOR       0    1   1   0  
+ 
+NoT(a)    0    0   1   1
 ====================================================================================================
 
 
@@ -1109,3 +1135,43 @@ $('tagName').css("propertyName","value");
 ---------------
 $('tagName').text("text....");
 $('tagName').html("<h1>text....</h1>")
+=========================================================================================
+Closuers:
+--------
+         -It is a special function, which can access to the parent scope data/variable (lexical scope)
+         -It can access the varaibales/function  of parent scope
+         -It is use private variables or functions (Data Hiding --Encapsulation)
+
+         example:  
+         function parent(){
+            let property="home";
+           return  function child(){
+                console.log(property);
+             }
+         }
+         let children()= parent();
+         children();
+====================================================================================================
+ this:
+ ---- 
+       - It is a keyword , it refers an object
+       - It helps to call property / functions
+
+call():
+------
+       - It is a function , used to call a function 
+       - when you need to invoke a function immediately with a object value(this)
+         -- pass the values into a function as arguments
+
+apply():
+-------
+       - It is a function , used to call a function 
+       - when you need to invoke a function immediately with a object value(this)
+         -- pass the values into a function as array
+
+bind():
+------
+       - It is a function, used to bind(fix) the value of this keyword for a function
+        ---- pass the values into a function as arguments
+        ---- It retuns  a function 
+==================================================================================================
