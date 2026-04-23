@@ -64,7 +64,7 @@
     //     0 0 1
     // --------------
     // &   0 0 0  --- last digit is zero --even number
-    
+
         if(value&1){
             console.log("odd number");
             
@@ -82,7 +82,30 @@
             
         // }
 
-          
+  
+        
+
+let obj={
+    value1:"Element",
+    fun:function(){
+        console.log("function of an object" , this.value1);
+        
+    }
+}
+console.log(obj.value1);
+obj.fun();
+
+
+
+let obj2={
+    value1:"Element of Obj2"
+    
+}
+let fun2=obj.fun.bind(obj2);
+fun2();
+
+
+
 
     </script>
     
