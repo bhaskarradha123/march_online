@@ -84,6 +84,19 @@ let arr2=["apple",'ball','apple','carrot','dog','dog']
     
     
     
+    let str="this is javascript session";
+    //       This Is Javascript Session
+//           thiS iS javascripT sessioN 
+    //       ThiS IS JavascripT SessioN
+    let res="";
+    let  words=str.split(" ");
+    for (const element of words) {
+    //  res=res+element.charAt(0).toUpperCase()+element.slice(1)+" ";
+    res=res+element.slice(0,element.length-1)+element.charAt(element.length-1).toUpperCase()+" ";      
+    } 
+    console.log(res);
+    
+    
    
     
 
